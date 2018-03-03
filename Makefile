@@ -1,7 +1,7 @@
-PHONY: test
+.PHONY: test
 test: 
 	docker build . -t test-php-image
 
-PHONY: run
-docker: 
+.PHONY: run
+run:
 	docker run --rm -it --entrypoint bash test-php-image:latest
