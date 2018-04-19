@@ -19,9 +19,9 @@ RUN set -x \
  && pecl install xdebug \
  && echo "date.timezone = Europe/Berlin" > /usr/local/etc/php/conf.d/timezone.ini \
  && echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory.ini  \
- && wget -O /usr/local/bin/composer https://getcomposer.org/download/1.6.3/composer.phar \
+ && wget -O /usr/local/bin/composer https://getcomposer.org/download/1.6.4/composer.phar \
  && chmod +x /usr/local/bin/composer \
- && wget https://chromedriver.storage.googleapis.com/2.36/chromedriver_linux64.zip -O /tmp/chromedriver.zip \
+ && wget https://chromedriver.storage.googleapis.com/2.38/chromedriver_linux64.zip -O /tmp/chromedriver.zip \
  && echo unzip \
  && unzip /tmp/chromedriver.zip -d /usr/local/bin \
  && apt-get autoclean -y \
