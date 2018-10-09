@@ -21,7 +21,7 @@ RUN set -x \
  && echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory.ini  \
  && wget -O /usr/local/bin/composer https://getcomposer.org/download/1.7.2/composer.phar \
  && chmod +x /usr/local/bin/composer \
- && wget https://chromedriver.storage.googleapis.com/2.40/chromedriver_linux64.zip -O /tmp/chromedriver.zip \
+ && wget https://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip -O /tmp/chromedriver.zip \
  && echo unzip \
  && unzip /tmp/chromedriver.zip -d /usr/local/bin \
  && apt-get autoclean -y \
