@@ -27,7 +27,7 @@ RUN set -eux; \
 		rm composer-setup.php; \
 		exit 1; \
 	fi; \
-	php composer-setup.php --quiet; \
+	php composer-setup.php --install-dir=bin --filename=composer --quiet; \
 	rm composer-setup.php; \
     wget https://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip -O /tmp/chromedriver.zip; \
     echo unzip; \
